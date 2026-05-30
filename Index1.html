@@ -3,38 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Letter</title>
+    <title>2026 | Private Access</title>
     <link rel="stylesheet" href="stylesheet.css">
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;500;700&family=Playfair+Display:ital,wght@1,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;700&family=Playfair+Display:ital,wght@1,700&display=swap" rel="stylesheet">
 </head>
-<body class="pro-light-bg">
-    
-    <audio autoplay loop>
-        <source src="audio/Palayo.mp3" type="audio/mpeg">
-    </audio>
+<body class="pro-dark-bg">
+    <div class="nebula-overlay"></div>
 
-    
-
-    <div class="bento-grid">
-        <div class="bento-item header-card">
-            <span class="timestamp">03.16.2026</span>
-            <h2>Dearest baby,</h2>
+    <div class="hero-container">
+        <div class="badge">HAPPIEST MESSAGE FOR MY BABY</div>
+        <div class="hearts-container" id="heartsContainer"></div>
+        <h1 class="glitch-title">Hi <span>Baby.</span></h1>
+        
+        <div class="portal-wrapper" onclick="unlockExperience()">
+            <div class="glow-core1">✉️</div>
+            <div class="glow-core">💜</div>
+            <div class="pulse-aura"></div>
         </div>
+        
+        
+        <br>
+        <br>
+        <br>
 
-        <div class="bento-item main-content">
-            <p>I don’t even know where to start because there are so many things I want to say to you.</p>
-            <p>But one thing I’m sure of is this: <span class="highlight">I’m really grateful that I have you.</span></p>
-            <p>eventhough meron tayong mga misunderstanding sa relationship natin sana wag kang mag sawa sa akin kasi.</p>
-            <p>Kahit simpleng chat mo lang, it changes my mood completely. Thinking about you makes everything feel okay again, Happy birthday baby I love you!.💜</p>
-            <p></p>
-        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        
 
-        <div class="bento-item button-card">
-            <button class="next-btn" onclick="window.location.href='PhotoOfHer.html'">
-                <span>View Memories</span>
-                <i class="arrow">→</i>
-            </button>
-        </div>
+        <p class="hint-text">Tap the heart to enter the vault</p>
     </div>
 
     <script>
@@ -58,7 +56,7 @@
     
     
             const isLeft = Math.random() > 0.5;
-            const randomX = isLeft ? Math.random() * 20 : 80 + Math.random() * 20;
+            const randomX = isLeft ? Math.random() * 30 : 80 + Math.random() * 20;
     
             heart.style.left = randomX + '%';
     
@@ -86,7 +84,5 @@
             setTimeout(() => window.location.href = 'MainLetter.html', 1000);
         }
     </script>
-
-    
 </body>
 </html>
